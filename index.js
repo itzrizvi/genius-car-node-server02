@@ -52,12 +52,6 @@ async function run() {
         });
 
 
-        //TEST HEROKU
-        app.get('/hello', (req, res) => {
-            res.send('HELLOW UPDATED FOR TESTING HEROKU');
-        })
-
-
     }
     finally {
         // await client.close();
@@ -67,6 +61,11 @@ run().catch(console.dir);
 
 app.get('/', (req, res) => {
     res.send('Hellow Genius Car Practice!!');
+})
+
+//TEST HEROKU
+app.get('/hello', (req, res) => {
+    res.send('HELLOW UPDATED FOR TESTING HEROKU');
 })
 
 app.listen(port, () => {
