@@ -52,6 +52,12 @@ async function run() {
         });
 
 
+        //TEST HEROKU
+        app.get('/hello', (req, res) => {
+            res.send('HELLOW UPDATED FOR TESTING HEROKU');
+        })
+
+
     }
     finally {
         // await client.close();
